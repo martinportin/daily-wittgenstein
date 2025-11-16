@@ -7,7 +7,7 @@ describe('/+page.svelte', () => {
 	it('should render a paragraph', async () => {
 		render(Page);
 
-		const paragraph = page.getByText(/daily-wittgensten/i);
+		const paragraph = page.getByText(/daily-wittgenstein/i);
 		await expect.element(paragraph).toBeInTheDocument();
 	});
 });
