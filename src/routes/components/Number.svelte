@@ -3,7 +3,7 @@
 		number: string;
 	}
 
-	let { number } = $props();
+	let { number }: Props = $props();
 </script>
 
 <p>{number}</p>
