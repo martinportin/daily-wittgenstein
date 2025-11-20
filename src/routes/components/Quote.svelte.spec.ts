@@ -3,7 +3,7 @@ import Quote from './Quote.svelte';
 import { render } from 'vitest-browser-svelte';
 import { page } from 'vitest/browser';
 
-describe('Quote', () => {
+describe('Quote component', () => {
 	test('should display "first quote" quote', () => {
 		render(Quote, { quote: 'first quote' });
 
