@@ -1,13 +1,17 @@
 <script lang="ts">
 	import Paragraph from './components/Paragraph.svelte';
 
-	interface Props {
+	interface Data {
 		number: string;
 		quote: string;
 		source: string;
 	}
 
-	let { number, quote, source }: Props = $props();
+	interface Props {
+		data: Data;
+	}
+
+	let { data }: Props = $props();
 </script>
 
-<Paragraph {number} {quote} {source} />
+<Paragraph number={data.number} quote={data.quote} source={data.source} />

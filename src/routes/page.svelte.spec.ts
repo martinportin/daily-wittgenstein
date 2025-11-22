@@ -5,7 +5,7 @@ import Page from './+page.svelte';
 
 describe('/+page.svelte', () => {
 	test('should render "1", "first quote" and "source one"', async () => {
-		render(Page, { number: '1', quote: 'first quote', source: 'source one' });
+		render(Page, { data: { number: '1', quote: 'first quote', source: 'source one' } });
 
 		const number = page.getByText(/1/i);
 		const quote = page.getByText(/first quote/i);
@@ -17,7 +17,7 @@ describe('/+page.svelte', () => {
 	});
 
 	test('should render "2", "second quote" and "source two"', () => {
-		render(Page, { number: '2', quote: 'second quote', source: 'source two' });
+		render(Page, { data: { number: '2', quote: 'second quote', source: 'source two' } });
 
 		const number = page.getByText(/2/i);
 		const quote = page.getByText(/second quote/i);
@@ -29,7 +29,7 @@ describe('/+page.svelte', () => {
 	});
 
 	test('should render "3", "third quote" and "source third"', () => {
-		render(Page, { number: '3', quote: 'third quote', source: 'source three' });
+		render(Page, { data: { number: '3', quote: 'third quote', source: 'source three' } });
 
 		const number = page.getByText(/3/i);
 		const quote = page.getByText(/third quote/i);
