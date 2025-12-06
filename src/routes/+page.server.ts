@@ -1,7 +1,11 @@
+import getRandomParagraphNumber from '$lib/utilities/getRandomParagraphNumber';
+import tractatus from '../../static/litterature/tractatus-logico-philosophicus.json';
+
 export function load() {
-	return {
-		number: '1',
-		quote: 'The world is all that is the case.',
-		source: 'Tractatus logico-philosophicus'
-	};
+	const todaysDate = Number(
+		new Intl.DateTimeFormat('en-GB').format(new Date()).replaceAll('/', '')
+	);
+	const numberOfParagraps = tractatus.length;
+	const paragraphNumber = getRandomParagraphNumber(todaysDate, numberOfParagraps);
+	return tractatus[paragraphNumber];
 }
