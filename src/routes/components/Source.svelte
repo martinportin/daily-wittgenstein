@@ -7,3 +7,9 @@
 </script>
 
 <p>{source}</p>
+
+<style>
+	p {
+		font-style: italic;
+	}
+</style>
