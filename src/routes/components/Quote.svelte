@@ -7,3 +7,13 @@
 </script>
 
 <p>{quote}</p>
+
+<style>
+	@media screen and (width >= 750px) {
+		p {
+			float: right;
+			width: 85%;
+			margin-left: 0.3em;
+		}
+	}
+</style>

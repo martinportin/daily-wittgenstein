@@ -10,6 +10,14 @@
 
 <style>
 	p {
+		float: right;
+		text-align: right;
 		font-style: italic;
+	}
+
+	@media screen and (width <= 750px) {
+		p {
+			font-size: small;
+		}
 	}
 </style>

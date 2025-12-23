@@ -12,6 +12,17 @@
 	let { number, quote, source }: Props = $props();
 </script>
 
-<Number {number} />
-<Quote {quote} />
-<Source {source} />
+<div>
+	<Number {number} />
+	<Quote {quote} />
+	<Source {source} />
+</div>
+
+<style>
+	div {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+</style>
