@@ -1,3 +1,3 @@
 # Daily Wittgenstein
 
-A basic application providing a (pesudo)random Wittgenstein quote each day.
+An application providing a (pesudo)random Wittgenstein quote each day. Currently based on _Tractatus logico philosophicus_.
